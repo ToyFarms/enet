@@ -579,3 +579,15 @@ enet_host_use_proxy (ENetHost * host, const char * ip, enet_uint16 port, const c
 }
 
 /** @} */
+
+void enet_host_use_new_packet(ENetHost *host) {
+  host->usingNewPacket = 1;
+}
+
+void enet_host_use_new_packet_for_server(ENetHost *host) {
+  host->usingNewPacketForServer = 1;
+}
+
+void enet_host_use_crc32(ENetHost *host) {
+  host->checksum = enet_crc32;
+}

@@ -4,12 +4,9 @@ and usage instructions.
 If you obtained this package from github, the quick description on how to build
 is:
 
-# Generate the build system.
+$ make
 
-autoreconf -vfi
+if you are cross compiling from linux:
 
-# Compile and install the library.
-
-./configure && make && make install
-
+$ make WINDOWS=1
 

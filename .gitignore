@@ -58,13 +58,15 @@ install_manifest.txt
 *.lo
 
 # Shared objects
-*.dll
-*.so
-*.so.*
-*.dylib
+# *.dll
+# *.so
+# *.so.*
+# *.dylib
 
 # Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
+
+__pycache__/
